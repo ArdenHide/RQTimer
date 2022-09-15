@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RQTimer", "RQTimer.csproj", "{04D963AF-8551-4A30-92F1-034C1CB79A87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04D963AF-8551-4A30-92F1-034C1CB79A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D963AF-8551-4A30-92F1-034C1CB79A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D963AF-8551-4A30-92F1-034C1CB79A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D963AF-8551-4A30-92F1-034C1CB79A87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64FCAB21-EC65-4568-BC2E-A384CD21B234}
+	EndGlobalSection
+EndGlobal
