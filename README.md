@@ -1,5 +1,5 @@
 # RQTimer
-Boss timer for game Royal Quest
+## Boss timer for game Royal Quest
 
 This app created 4 fun.
 
