@@ -17,7 +17,7 @@
     FontFamily="{DynamicResource MaterialDesignFont}"
         
     Title="RQTimer"
-    Height="250" Width="250"
+    Height="350" Width="750"
     WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
@@ -27,9 +27,14 @@
 
         <Grid x:Name="MenuStrip" Grid.Row="0">
         </Grid>
-        <Grid Grid.Row="1"
-              HorizontalAlignment="Center">
-            <StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="74"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <StackPanel Grid.Row="0"
+                        VerticalAlignment="Top">
                 <materialDesign:Card Padding="16" Margin="16">
                     <TextBlock 
                         TextWrapping="Wrap"
@@ -37,6 +42,14 @@
                         Text="Boss timer for game Royal Quest"/>
                 </materialDesign:Card>
             </StackPanel>
+
+            <DataGrid Grid.Row="1"
+                      ItemsSource="{Binding ListOfBosses}"
+                      CanUserAddRows="False">
+                <DataGrid.Columns>
+                </DataGrid.Columns>
+            </DataGrid>
+
         </Grid>
     </Grid>
 </Window>
