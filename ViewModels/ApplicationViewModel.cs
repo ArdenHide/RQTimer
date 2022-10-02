@@ -9,8 +9,6 @@ namespace RQTimer.ViewModels;
 
 public class ApplicationViewModel : NotifyPropertyChanged
 {
-    private string currentDirectory { get; set; }
-
     private ObservableCollection<BossSettings> _listOfBosses;
 
     public ObservableCollection<BossSettings> ListOfBosses
@@ -25,10 +23,12 @@ public class ApplicationViewModel : NotifyPropertyChanged
 
     public ApplicationViewModel()
     {
-        ObservableCollection<BossSettings> bosses = LoadJson<ObservableCollection<BossSettings>>(
-            @"..\..\..\Data\Local\bosses.json");
-
-        ListOfBosses = bosses;
+        ListOfBosses = LoadJson<ObservableCollection<BossSettings>>(
+            @"..\..\..\Data\Local\bosses_test.json");
+        foreach (var boss in ListOfBosses)
+        {
+            boss.Image = @"..\..\..\Data\img\boss_icons\" + boss.Image;
+        }
     }
 
     public static T LoadJson<T>(string filePath) where T : class

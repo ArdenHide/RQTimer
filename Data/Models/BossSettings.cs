@@ -21,6 +21,7 @@ public class BossSettings
     public TimeSpan CorpsTime { get; set; }
 
     public TimeSpan AlertTime { get; set; }
+    public string? Image { get; set; }
 
     public List<DateTime>? KillingLog { get; set; }
 }
