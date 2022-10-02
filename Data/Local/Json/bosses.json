@@ -1,6 +1,6 @@
 [
   {
-    "Id": 0,
+    "TimerId": 0,
     "HasTrack": false,
     "BossName": "БУ Лес",
     "BossType": "EliteBoss",

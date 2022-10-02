@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using Newtonsoft.Json.Converters;
 using System.Text.Json.Serialization;
 
-namespace RQTimer.Data.Local.Models;
+namespace RQTimer.Data.Models;
 
 public class BossSettings
 {
-    public int Id { get; set; }
+    public int TimerId { get; set; }
 
     public bool HasTrack { get; set; }
 

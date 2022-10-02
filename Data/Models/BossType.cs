@@ -1,4 +1,4 @@
-﻿namespace RQTimer.Data.Local.Models;
+﻿namespace RQTimer.Data.Models;
 
 public enum BossType
 {
